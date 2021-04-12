@@ -2,25 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>in ra 20 so nguyen to</title>
 </head>
 <body>
 <script>
     let number = prompt("so luong so nguyen to can in ra");
     let count = 0;
-    let so_nguyen_to = true
-    for ( let N = 2;; N++){
-        for (i = 2;; i++){
-            if ( N % i === 0){
+    let N = 2;
+
+    while (count<=number){
+        so_nguyen_to = true;
+        for ( i = 2; i < N; i++){
+            if (N % i === 0){
                 so_nguyen_to = false;
-            }else{
-                so_nguyen_to = true
-                document.write(N)
-                count = count++
-                if (count === number)
-                    break;
+                break;
             }
-        }
+        }if (so_nguyen_to === true){
+            document.write(N+"<br/>")
+            count++
+        }N++
     }
 </script>
 
