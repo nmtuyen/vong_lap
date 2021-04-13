@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let so_tien_gui = +prompt("nhap so tien gui ngan hang");
+        let lai_suat_hang_thang = +prompt("nhap lai suat");
+        let so_thang_cho_vay = +prompt("so thang cho vay la");
+        for (i = 1; i <= so_thang_cho_vay; i++){
+            let tien_lai_hang_thang = so_tien_gui * lai_suat_hang_thang;
+            so_tien_gui = so_tien_gui + tien_lai_hang_thang;
+        }
+        document.write(Math.ceil(so_tien_gui)+"đồng")
+    </script>
+
+</body>
+</html>

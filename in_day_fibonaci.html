@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let sothunhat = 1;
+    let sothuhai = 1;
+    let sothuba;
+    document.write(sothunhat);
+    document.write(sothuhai);
+    let a = prompt("nhap so luong so fibonaci can in")
+    for (i = 0; i <a ; i++){
+        sothuba = sothuhai + sothunhat
+        sothunhat = sothuhai
+        sothuhai = sothuba
+        document.write(sothuba+" ")
+    }
+
+</script>
+
+</body>
+</html>

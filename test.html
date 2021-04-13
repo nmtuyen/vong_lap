@@ -5,34 +5,23 @@
     <title>Title</title>
 </head>
 <body>
-<table>
-    <tr>
-        <td colspan="4"><input  id="abc"></input>
-    </tr>
-    <tr>
-        <td><button type="button" onclick="abc.value += 1">1</button></td>
-        <td><button type="button" onclick="abc.value += 2">2</button></td>
-        <td><button type="button" onclick="abc.value += 3">3</button></td>
-        <td><button type="button" onclick="abc.value += '+'">+</button></td>
-    </tr>
-    <tr>
-        <td><button type="button" onclick="abc.value += 4">4</button></td>
-        <td><button type="button" onclick="abc.value += 5">5</button></td>
-        <td><button type="button" onclick="abc.value += 6">6</button></td>
-        <td><button type="button" onclick="abc.value += '-'">-</button></td>
-    </tr>
-    <tr>
-        <td><button type="button" onclick="abc.value += 7">7</button></td>
-        <td><button type="button" onclick="abc.value += 8">8</button></td>
-        <td><button type="button" onclick="abc.value += 9">9</button></td>
-        <td><button type="button" onclick="abc.value += '*'">x</button></td>
-    </tr>
-    <tr>
-        <td><button type="button" onclick="abc.value = ''">C</button></td>
-        <td><button type="button" onclick="abc.value += 0">0</button></td>
-        <td><button type="button" onclick="abc.value = eval(abc.value)">=</button></td>
-        <td><button type="button" onclick="abc.value += '/'">/</button></td>
-    </tr>
-</table>
+<script>
+    let a = prompt("nhap so lương sao")
+    for (i = a; i >= 1; i--){
+        for ( j = 1; j < i; j++){
+            document.write("*")
+        }
+        document.write("<br>")
+    }
+    for (i = 1; i < a; i++){
+        for (j = 0; j < i; j++ ){
+            document.write('#')
+        }
+        for (k = 1; k < i - j; k++){
+            document.write("*")
+        }
+        document.write("<br>")
+    }
+</script>
 </body>
 </html>
