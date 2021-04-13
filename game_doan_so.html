@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="play" onclick="bat_dau()">Chơi</button>
+<script>
+    function bat_dau(){
+        let a = +prompt("Nhap khoang du doan ");
+        let b = Math.ceil(Math.random()*(a-1)+1);
+        for(i=0; i<=3; i++){
+            let c = +prompt("nhap so du doan");
+            if(c===b){
+                alert("Chúc mừng");
+                break;
+            }else if (c < b){
+                alert("Bạn đoán nhỏ quá");
+                    // return = false;
+            }else{
+                alert("Bạn đoán lớn quá");
+                    // return = false;
+                }
+            }
+    }
+</script>
+</body>
+</html>
